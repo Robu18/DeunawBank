@@ -7,7 +7,7 @@ import { PayComponent } from './pay/pay.component';
 
 const routes: Routes = [
   { path: 'contact', component: ContactComponent },
-  {path: '//Robu18/DeunawBank', component: HomeComponent},
+  {path: '/DeunawBank', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'payment', component: PayComponent}
 ];
