@@ -1,0 +1,11 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+ul li, ul a{
+    border-radius: 15%;
+}
+.page-item.active .page-link {
+    background-color: #F9843E;
+    border-color: #F9843E;
+}
+*{
+    color:black;
+}

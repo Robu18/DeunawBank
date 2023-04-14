@@ -1,0 +1,8 @@
+.card{
+    width: 25vw;
+    height: 25vh;
+    transition: width .5s ease-in-out;
+}
+.card:hover{
+    width: 28vw;
+}

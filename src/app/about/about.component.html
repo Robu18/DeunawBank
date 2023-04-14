@@ -1,0 +1,31 @@
+<app-nav></app-nav>
+<h1 style="text-align: center; margin-top: 5vh; font-size: 4vh;">About</h1>
+<div style="margin-top:5vh">
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-link" [ngClass]="{disabled: currentPage === 0}" (click)="currentPage = currentPage - 1">Prev</li>
+            <li 
+            class="page-item"
+            [ngClass]="{active: i === currentPage}" 
+            *ngFor="let img of images; let i = index">
+                <a class="page-link" (click)="currentPage = i">{{ i + 1 }}</a>
+            </li>
+            <li class="page-link" [ngClass]="{disabled: currentPage === images.length - 1} " (click)="currentPage = currentPage + 1">Next</li>
+        </ul>
+      </nav>
+</div>
+<div style="text-align: center; background-image: linear-gradient(30deg, #F9843E, white, white, #F9843E); margin-top: 2vh;" >
+    <img [src]="images[currentPage].imgUrl" style="height: 35vh; width: 40vw;">
+</div>
+<div style="width: 100vw; display: flex; justify-content: center; margin-top: 5vh;">
+    <div style="width: 70vw; text-align: center;">
+        <p>
+            Deunaw Bank is a trusted financial institution that provides a wide range of banking services to individuals and businesses. 
+            With our commitment to providing personalized banking solutions, we aim to help our clients achieve their financial goals and objectives. <br>
+            At Deunaw Bank, we believe in transparency, innovation, and efficiency. We strive to deliver exceptional customer service through our highly 
+            trained professionals and advanced banking technology. Our team of experts is dedicated to providing the best financial advice and solutions 
+            to our clients.
+        </p>
+    </div>
+</div>
+

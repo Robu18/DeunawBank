@@ -1,0 +1,60 @@
+<div style="height: 100vh; color:black">
+    <app-nav></app-nav>
+    <h1>Payment</h1>
+    <div class="container" style="margin-top: 15vh; width: 50vw;">
+        <div class="row">
+            <div class="form-group col">
+                <label>Full Name</label>
+                <input class="form-control" (input)="onNameChange($any($event.target).value)"/>
+            </div>
+            
+            <div class="col">
+                <label><b>Full Name</b></label>
+                <div> {{ name | titlecase }} </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col">
+                <label>E-mail</label>
+                <input class="form-control" (input)="onEmailChange($any($event.target).value)"/>
+            </div>
+            
+            <div class="col">
+                <label><b>E-mail</b></label>
+                <div> {{ email }} </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col">
+                <label>Date</label>
+                <input type="date" class="form-control" (input)="onDateChange($any($event.target).value)"/>
+            </div>        
+            <div class="col">
+                <label><b>Date</b></label>
+                <div> {{ date | date: 'MMMM dd, y' }} </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col">
+                <label>Amount</label>
+                <input class="form-control" (input)="onAmountChange($any($event.target).value)"/>
+            </div>
+            
+            <div class="col">
+                <label><b>Amount</b></label>
+                <div> {{ amount | currency: "EUR"}} </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 5vh;">
+            <button type="button" class="btn btn-success" (click)="pay()">Make the payment</button>
+        </div>
+    </div>
+   
+    <div style="text-align: right; padding-right: 10vw; margin-top: 10vh;">
+        <h2 style="font-style: italic;">Thank you for choosing us!</h2>
+        <figure>
+            <img src="assets/logo.png" style="width: 10vw;">
+        </figure>
+    </div>
+</div>
+

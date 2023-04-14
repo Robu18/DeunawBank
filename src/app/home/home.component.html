@@ -1,0 +1,19 @@
+<!-- nav -->
+<app-nav id="home"></app-nav>
+<!-- logo -->
+<figure style="text-align: center; margin-top: 5vh;">
+<a routerLink="/"><img src="./assets/logo.png" class="homeimg"> </a>
+</figure>
+<!-- cards -->
+<div style="display: flex; flex-wrap: wrap; margin-top:10vh; justify-content: center;">
+  <app-card
+  *ngFor="let p of post"
+  [title] = "p.title"
+  [content] = "p.content"
+  [imgUrl] = "p.imgUrl"
+  [username] = "p.username"
+  [profile] = "p.profile"
+  [margin] = "p.margin"
+>
+</app-card>
+</div>

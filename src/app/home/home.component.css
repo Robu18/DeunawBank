@@ -1,0 +1,7 @@
+.homeimg{
+    width: 20vw;
+    transition: width .5s ease-in-out;
+}
+.homeimg:hover{
+    width: 22vw;
+}

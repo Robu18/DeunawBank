@@ -1,0 +1,15 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+h1{
+    text-align:center;
+    padding-top: 5vh;
+}
+.form-group{
+    border-right: 2px solid black;
+}
+.btn{
+    border:none;
+    background-color: black;
+}
+.btn:hover{
+    background-color: #F9843E;
+}
